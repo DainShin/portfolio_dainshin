@@ -1,0 +1,799 @@
+/* This is web font for the logo-like name in the menu */
+@font-face {
+    font-family: logoFont;
+    src: url(./assets/ShaquettaTorelly-0WZPd.otf);
+}
+
+/* GENERAL */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: #555;
+}
+
+html {
+    font-size: 10px;
+    color: #333;
+}
+
+body {
+    font-size:  clamp(1rem, 0.75rem + 1.5vw, 2rem);
+    margin: 0 auto;
+}
+
+
+h3 {
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    font-size: clamp(1.8em, 0.75rem + 1.5vw, 3.8rem);
+    text-align: center;
+}
+
+h4 {
+    font-size: clamp(1.6rem, 0.75rem + 1.5vw, 3.5rem);
+    font-weight: 600;
+}
+
+a {
+    text-decoration: none;
+}
+
+a,
+p,
+span {
+    font-size: clamp(1.6rem, 0.75rem + 1.5vw, 2.5rem);
+}
+
+li {
+    list-style: none;
+}
+
+
+/* WRAP */
+.wrap {
+    padding-top: 3em;
+    width: 80%;
+    margin: 0 auto;
+    background-color: #FFFF;
+}
+
+.inner {
+    padding-bottom: 30em;
+}
+
+
+/* HEADER */
+header {
+    position : static;
+    top: 0;
+    background: #fff;
+}
+
+.menu-bar {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.menu-bar .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo p a {
+    font-family: 'logoFont', sans-serif;
+    font-size:  clamp(2.5rem, 0.75rem + 1.5vw, 5em);
+}
+
+.menu-bar ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
+}
+
+.menu-bar ul li {
+    margin: 0.5em ;
+}
+
+
+.toggle {
+    display: block;
+    padding-top: 1em;
+    font-size: 1.5em;
+}
+
+
+
+/* SECTION-INTRO */
+.section-intro {
+    margin-top: 8em;
+}
+
+svg {
+	font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+	width: 100%; 
+    height: 100%;
+}
+
+
+svg text {
+	text-transform: uppercase;
+	animation: stroke 5s infinite alternate;
+	stroke-width: 0.7;
+	stroke: #2D9CDB;
+	font-size: clamp(22rem, 0.75rem + 1.5vw, 30rem);
+}
+
+
+
+
+@keyframes stroke {
+	0% {
+		fill: rgba(72,138,20,0); stroke:#2D9CDB;
+		stroke-dashoffset: 25%; stroke-dasharray: 0 50%; stroke-width: 2;
+	}
+	70% {
+        fill: rgba(72,138,20,0); stroke: #2D9CDB;
+    }
+	80%  {
+        fill: rgba(72,138,20,0); stroke:#2D9CDB; stroke-width: 3; 
+    }
+	100% {
+		fill: rgba(45,156,219,1); stroke: #2D9CDB; 
+		stroke-dashoffset: -25%; stroke-dasharray: 50% 0; stroke-width: 0;
+	}
+}
+
+
+
+/* SECTION-TYPE */
+.type-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.type {
+    color: transparent;
+    font-size: clamp(2.3rem, 0.75rem + 1.5vw, 5.2rem);
+    font-weight: 700;
+    white-space: nowrap;
+    position: relative;
+}
+
+.type::after {
+    display: inline-block;
+    content: "I develop values!";
+    color: #333;
+    overflow: hidden;
+    border-right: 3px solid #333;
+    animation: typing 10s steps(35) infinite;
+}
+
+
+@keyframes typing {
+    0% {
+        width: 0%;
+    }
+    40% {
+        width: 8.1em;
+    }
+    60% {
+        width: 8.1em;
+    }
+    100% {
+        width: 0%;
+    }
+}
+
+
+/*  KEYWORDS */
+.keywords-textbox p {
+    font-size: clamp(1rem, 0.75rem + 1.5vw, 2.3rem);
+}
+
+.text-para {
+    padding-top: 1em;
+    text-align: center;
+}
+
+.keywords-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    column-gap: 7em;
+}
+
+.keyword {
+    margin: 3em 0;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.keyword p:nth-child(2) {
+    text-align: center;
+    font-weight: 800;
+    font-size: 1.5em;
+}
+
+.keyword p:nth-child(3) {
+    text-align: center;
+    font-size: 1em;
+}
+
+.keyword-image-box {
+    max-width: 200px;
+}
+
+.keyword-image-box img {
+    width: 100%;
+}
+
+/* TIMELINE */
+.timeline-box{ 
+    margin-top: 30em;
+}
+
+.timeline-box h3 {
+    margin-bottom: 5em;
+  
+}
+
+.timeline {
+   padding-bottom: 2em;
+   position: relative;
+}
+
+.timeline::after {
+    left: 30px;
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: #c0c0c0;
+    top: 0;
+    bottom: 5%; /* 타임라인바 길이 */
+    margin-left: -3px;
+    z-index: 1;
+}
+
+.timeline .container {
+    width: 50%;
+    padding: 3em;
+    position: relative;
+    background-color: inherit;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+/* .timeline.active .container */
+.timeline.active .container {
+    opacity: 1;
+}
+
+/* 각 container-delay 설정 */
+.timeline.active .container:nth-child(1) {
+    transition-delay: 0.1s;
+}
+
+.timeline.active .container:nth-child(2) {
+    transition-delay: 0.4s;
+}
+
+.timeline.active .container:nth-child(3) {
+    transition-delay: 0.9s;
+}
+
+.timeline.active .container:nth-child(4) {
+    transition-delay: 1.2s;
+}
+
+.container::after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    right: -7px;
+    background-color: #FFFFFF;
+    border: 4px solid #2D9CDB;
+    top: 50px;
+    border-radius: 50%;
+    z-index: 999;
+}
+
+.content {
+    min-width: 350px;
+}
+
+.left {
+    left: 0;
+}
+
+.left .content {
+    text-align: right;
+}
+
+.container .content h4 {
+    padding-top: .3em;
+}
+
+.container .content p:nth-of-type(3) {
+    padding-bottom: .8em;
+}
+
+.container:last-child .content h4 {
+    color: #2D9CDB;
+}
+
+.right {
+    left: 50%;
+}
+
+.right::after {
+    left: -11px;
+}
+
+.container::before {
+    left: 60px;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+}
+
+
+.right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+}
+
+.left::after,
+.right::after {
+    left:22px;
+}
+
+.right {
+    left: 0;
+}
+
+.left .content{
+    text-align: left;
+}
+
+
+
+.content {
+    padding: 1em 1em;
+    background-color: white;
+    position: relative;
+    border-radius: 6px;
+}
+
+
+/* SKILLS  */
+.section-skill {
+    margin-top: 20em;
+}
+
+.skill-cont {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-gap: 4.5em;
+    padding-top: 5em;
+}
+
+.skill-cont div {
+   width: 100%;
+}
+
+.skill-cont div p {
+    font-weight: 600;
+}
+
+.skill {
+    height: 3rem;
+    background-color: #ccc;
+    border-radius: 40px;
+    width: 100%;
+}
+
+#css {
+    width: 70%;
+    background-color: #EAEAEA;
+}
+#jquery {
+    width: 60%;
+    background-color: #2D9CDB;
+}
+
+#python {
+    width: 65%;
+    background-color:  #EAEAEA;
+}
+
+#java {
+    width: 70%;
+    background-color: #2D9CDB;
+}
+
+#csharp {
+    width: 65%;
+    background-color: #EAEAEA;
+}
+
+#database {
+    width: 65%;
+    background-color: #2D9CDB;
+}
+
+.skills .skill span {
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s ease;
+}
+
+.skills.active .skill span {
+    opacity: 1;
+    display: block;
+    height: 3rem;
+    line-height: 3rem;
+    text-align: right;
+    box-sizing: border-box;
+    animation: stack 3s 1;
+    border-radius: 40px;
+    overflow: hidden;
+}
+
+
+/* LANGUAGES */
+.langs {
+    margin-top: 20em;
+}
+
+.lang-cont {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-gap: 4.5em;
+    padding-top: 5em;
+}
+
+.lang-cont div p {
+    font-weight: 600;
+}
+
+.lang {
+    height: 3rem;
+    background-color: #ccc;
+    border-radius: 40px;
+    max-width: 600px;
+    flex: 1;
+}
+
+.langs .lang span {
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s ease;
+}
+
+.langs.active .lang span {
+    opacity: 1;
+    display: block;
+    height: 3rem;
+    line-height: 3rem;
+    text-align: right;
+    box-sizing: border-box;
+    animation: stack 3s 1;
+    border-radius: 40px;
+    overflow: hidden;
+}
+
+#eng {
+    width: 70%;
+    background-color: #848482;
+}
+
+#kor {
+    width: 99%;
+    background-color: #e3319d;
+}
+
+#man {
+    width: 85%;
+    background-color: #868684;
+}
+
+@keyframes stack {
+    0% {
+        width: 0;
+    }
+    50% {
+        width: 50%;
+    }
+}
+
+@keyframes disappear {
+    0% {
+        width: 100%;
+    }
+    50% {
+        width: 0;
+    }
+}
+
+
+/*PROJECTS */
+.section-project {
+    margin-top: 20em;
+}
+
+.card span {
+    font-size:  clamp(1.2rem, 0.75rem + 1.5vw, 2rem);
+    font-weight: bold;
+    color: #999;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+    margin: 2em 0 0 0;
+}
+
+.item {
+    max-width: 650px;
+}
+
+.item article p {
+    font-size: 1.6rem;
+}
+
+.item article span {
+    font-size: 1.2rem;
+}
+
+.band {
+    width: 100%;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-gap: 8rem;
+    padding-top: 5em;
+}
+
+
+.card {
+    background-color: #fff;
+    text-decoration: none;
+    color: #444;
+    box-shadow: 0 2px 5px rgba(0,0,0,.1);
+    display: flex;
+    min-height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    top: 0;
+}
+
+
+.card:hover {
+    top: -2px;
+    box-shadow: 0 4px 5px rgba(0,0,0,.2);
+}
+
+/* I positioned the items in the box by using flex box */
+article {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1.5em;
+}
+
+article p {
+    flex: 1;
+}
+
+.thumb {
+    padding-bottom: 60%;
+    background-size: cover;
+    background-position: center;
+}
+
+.one {
+    background-image: url("./assets/2021_population_pyramid.png");
+}
+
+.two {
+    background-image: url("./assets/arduino.gif");
+}
+
+.three {
+    background-image: url("./assets/javafx.gif");
+}
+
+.four {
+    background-image: url("./assets/code.png");
+}
+
+.five {
+    background-image: url("./assets/database.png");
+}
+
+.six {
+    background-image: url("./assets/discordbot.gif");
+}
+
+
+
+/* FOOTER */
+footer {
+    width: 100%;
+    height: 500px;
+    border-top: #bbbbbb solid 1px;
+}
+
+footer .inner {
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+footer .img-box {
+    display: flex;
+    align-items: center;
+}
+
+.footer-text {
+    text-align: center;
+    margin: 5rem 0;
+}
+
+.footer-text p:nth-of-type(1) {
+    font-size: clamp(3.2rem, 0.75rem + 1.5vw, 5rem);
+    font-weight: 600;
+    margin: 0.8em 0;
+}
+
+.footer-text p:nth-of-type(2) {
+    color: #778899;
+}
+
+footer ul {
+    flex-wrap: wrap;
+}
+
+footer ul li {
+    margin-bottom: 1em;
+}
+
+footer ul li a {
+    display: flex;
+    justify-content: center;
+}
+
+footer .img-box {
+    width: 2.5em;
+
+}
+
+.img-box img {
+    width: 100%;
+    height: auto;
+}
+
+.img-box .moving-icon {
+    display: none;
+}
+
+.img-box:hover .moving-icon {
+    display: inline-block;
+}
+
+.img-box:hover .static-icon {
+    display: none;
+}
+
+
+.text-item {
+    width: 10rem;
+    padding: 1.8em 0 2em 0;
+    text-align: center;
+}
+
+
+@media screen and (min-width: 65em) {
+
+    .menu-bar ul {
+        display: flex;
+        flex-direction: row;
+        margin-top: 0;
+    }
+
+    .menu-bar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .band,
+    .lang-con,
+    .skill-cont {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .menu-bar {
+        padding: 3em 5em 7em 5em;
+    }
+
+    .keywords-container {
+        flex-direction: row;
+        row-gap: 7em;
+        padding-top: 5em;
+    }
+
+}
+
+/* Media Query for the 1000px display */
+@media screen and (min-width: 100em) {
+
+    .band,
+    .lang-cont,
+    .skill-cont {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    footer ul {
+        display: flex;
+        justify-content: space-around;
+    }
+
+   
+    .timeline::after {
+        left: 50%;
+    }
+
+    .left .content{
+        text-align: right;
+    }
+
+    .right {
+        left: 50%;
+    }
+
+    .right::after {
+        left: -10px;
+    }
+
+    .left::before {
+        left: 20%;
+    }
+
+    .left::after {
+        left: auto;
+    }
+
+    footer ul {
+        display: flex;
+        flex-direction: row;
+    }
+
+}
