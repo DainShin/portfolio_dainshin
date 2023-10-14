@@ -131,7 +131,7 @@ svg text {
 	animation: stroke 5s infinite alternate;
 	stroke-width: 0.7;
 	stroke: #2D9CDB;
-	font-size: clamp(22rem, 0.75rem + 1.5vw, 30rem);
+	font-size: clamp(18rem, 0.7rem + 1.2vw, 20rem);
 }
 
 
